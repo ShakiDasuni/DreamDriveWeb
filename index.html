@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Drive | Research Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&family=Syncopate:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="stealth-nav">
+        <div class="nav-brand">
+            <span class="glitch-mini" data-text="DREAM DRIVE">DREAM DRIVE</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#abstract" class="nav-link">Abstract</a></li>
+            <li><a href="#domain" class="nav-link">Domain</a></li>
+            <li><a href="#wbs" class="nav-link">Execution</a></li>
+            <li><a href="#milestones" class="nav-link">Milestones</a></li>
+            <li><a href="#resources" class="nav-link">Resources</a></li>
+            <li><a href="#team" class="nav-link">Team</a></li>
+        </ul>
+        <div class="nav-search">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="searchInput" placeholder="Search..." class="stealth-search">
+        </div>
+    </nav>
+
+    <!-- Side Table of Contents Tracker -->
+    <nav class="side-tracker">
+        <ul class="tracker-links">
+            <li><a href="#home" class="tracker-link active" data-title="Home"></a></li>
+            <li><a href="#why-dreamdrive" class="tracker-link" data-title="Why Us"></a></li>
+            <li><a href="#abstract" class="tracker-link" data-title="Abstract"></a></li>
+            <li><a href="#domain" class="tracker-link" data-title="Domain"></a></li>
+            <li><a href="#wbs" class="tracker-link" data-title="Execution"></a></li>
+            <li><a href="#milestones" class="tracker-link" data-title="Milestones"></a></li>
+            <li><a href="#resources" class="tracker-link" data-title="Resources"></a></li>
+            <li><a href="#team" class="tracker-link" data-title="Team"></a></li>
+        </ul>
+    </nav>
+
+    <!-- Interactive Background Blob -->
+    <div id="blob"></div>
+    <div id="blur"></div>
+
+    <div class="dashboard-container" id="bento">
+
+        <!-- 1. Home / Abstract -->
+        <section id="home" class="page-section">
+            <div class="hero-bento">
+
+                <!-- Main Hero Text Box -->
+                <div class="bento-card hero-main-card group">
+                    <div class="header-tag">
+                        <span class="pulse-dot"></span>
+                        <span class="card-tag">Research Dashboard</span>
+                    </div>
+                    <h1 class="glitch hero-title" data-text="DREAM DRIVE">DREAM DRIVE</h1>
+                    <div class="typing-container">
+                        <p class="subtitle typing-line-1">Bridging Car Enthusiasts</p>
+                        <p class="subtitle typing-line-2">with Trusted Garages.</p>
+                    </div>
+                    <div class="horizontal-stack" style="margin-top: 30px;">
+                        <a href="#abstract" class="btn btn-primary" style="text-decoration: none;">Read Abstract</a>
+                        <a href="#domain" class="btn btn-secondary" style="text-decoration: none;">Explore Research</a>
+                        <a href="#why-dreamdrive" class="btn btn-why" style="text-decoration: none;">Why Dream
+                            Drive?</a>
+                    </div>
+                </div>
+
+                <!-- Hero Image Box -->
+                <div class="bento-card hero-image-card group">
+                    <div class="card-bg-image"
+                        style="background-image: url('assets/dream_drive_hero.png'); mask-image: none; -webkit-mask-image: none; opacity: 0.85; filter: none; border-radius: 12px; transform: scale(1.05);">
+                    </div>
+
+                    <div class="floating-badge badge-1">
+                        <strong class="text-gradient">AI Powered</strong>
+                        <span>Trust Verification</span>
+                    </div>
+
+                    <div class="floating-badge badge-2">
+                        <strong class="text-gradient">Seamless</strong>
+                        <span>Digital Interface</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 1.2. Why Choose Dream Drive? -->
+        <section id="why-dreamdrive" class="page-section">
+            <div class="bento-card full-page-card group" style="min-height: auto; padding: 50px;">
+                <div class="card-content">
+                    <div class="header-tag">
+                        <span class="pulse-dot"></span>
+                        <span class="card-tag">Why Choose Us</span>
+                    </div>
+                    <h2 style="margin-bottom: 10px;">Why Choose <span class="text-gradient">Dream Drive?</span></h2>
+                    <p class="lead" style="margin-bottom: 35px;">Sri Lanka's automotive passion deserves a smarter,
+                        digital home.</p>
+
+                    <div class="why-grid">
+
+                        <div class="why-card">
+                            <div class="why-icon">🔍</div>
+                            <h4 class="text-gradient">Untapped Market, Unlocked</h4>
+                            <p>While the world races ahead digitally, Sri Lanka's vibrant car culture remains largely
+                                offline. Dream Drive is the bridge that finally changes that — putting local garages on
+                                the digital map.</p>
+                        </div>
+
+                        <div class="why-card">
+                            <div class="why-icon">🤖</div>
+                            <h4 class="text-gradient">AI-Matched, Not Guessed</h4>
+                            <p>Forget word-of-mouth gambles. Our machine learning engine profiles every garage by
+                                specialty — so your dream machine lands in exactly the right hands, every single time.
+                            </p>
+                        </div>
+
+                        <div class="why-card">
+                            <div class="why-icon">🏎️</div>
+                            <h4 class="text-gradient">Built for Enthusiasts</h4>
+                            <p>From classic restoration builds to high-performance modifications, Dream Drive speaks
+                                your language. This is a platform crafted by enthusiasts, for enthusiasts — not just a
+                                generic directory.</p>
+                        </div>
+
+                        <div class="why-card">
+                            <div class="why-icon">⚡</div>
+                            <h4 class="text-gradient">One Click. Real Connection.</h4>
+                            <p>No more endless searching. Dream Drive transforms a fragmented market into a streamlined
+                                community — empowering garage owners and giving you one-click access to the expertise
+                                your car deserves.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1.5. Abstract -->
+        <section id="abstract" class="page-section">
+            <div class="bento-card full-page-card group"
+                style="min-height: 30vh; justify-content: flex-start; padding: 40px 50px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center;">
+                <div class="card-content" style="z-index: 5;">
+                    <div class="header-tag">
+                        <span class="pulse-dot"></span>
+                        <span class="card-tag">Abstract</span>
+                    </div>
+                    <h2>The Digital Shift</h2>
+                    <p class="lead">The Sri Lankan automotive industry faces a significant digital engagement gap, where
+                        car enthusiasts still rely on time-consuming physical searches or word-of-mouth for specialized
+                        services.</p>
+                    <p><em>Dream Drive</em> bridges this gap by providing an intelligent web application tailored for
+                        young enthusiasts (aged 18–35).
+                    <p> By utilizing machine learning for specialty-based profiling, the platform offers a one-click
+                        connection to local garages. The final system fosters a digital community through restoration
+                        showcases and social media integration, transforming how automotive services are discovered and
+                        consumed in Sri Lanka.</p>
+
+
+
+
+
+
+
+                </div>
+                <div class="card-image-wrapper"
+                    style="width: 100%; height: 100%; min-height: 250px; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); position: relative; z-index: 5;">
+                    <img src="assets/image1.jpeg" alt="Digital Interface"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Domain -->
+        <section id="domain" class="page-section">
+            <div class="bento-card full-page-card group">
+                <div class="card-content">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px; flex-wrap: wrap; gap: 20px;">
+                        <div>
+                            <div class="header-tag">
+                                <span class="pulse-dot"></span>
+                                <span class="card-tag">Domain & Methodology</span>
+                            </div>
+                            <h2 style="margin: 0;">Research Framework</h2>
+                        </div>
+                        <img src="assets/image2.jpeg" alt="Framework"
+                            style="width: 180px; height: 120px; object-fit: cover; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    </div>
+                    <div class="domain-bento-grid">
+
+                        <!-- 1. Literature Survey -->
+                        <div class="domain-box">
+                            <div class="box-icon">01</div>
+                            <h4 class="text-gradient">Literature Survey</h4>
+                            <p>Analysis of existing platforms reveals a heavy reliance on outdated listing methods.
+                                Current literature emphasizes the critical need for modernized trust-verification in
+                                peer-to-peer automotive services.</p>
+                        </div>
+
+                        <!-- 2. Research Gap -->
+                        <div class="domain-box">
+                            <div class="box-icon">02</div>
+                            <h4 class="text-gradient">Research Gap</h4>
+                            <p>There is a severe lack of centralized visibility and AI-driven trust-verification systems
+                                specifically tailored for independent mechanics and young car enthusiasts.</p>
+                        </div>
+
+                        <!-- 3. Research Problem -->
+                        <div class="domain-box">
+                            <div class="box-icon">03</div>
+                            <h4 class="text-gradient">Research Problem</h4>
+                            <p>A massive digital disconnect exists between digitally-native enthusiasts and local
+                                garages, leading to trust deficits and inefficient service discovery.</p>
+                        </div>
+
+                        <!-- 4. Research Objectives -->
+                        <div class="domain-box">
+                            <div class="box-icon">04</div>
+                            <h4 class="text-gradient">Research Objectives</h4>
+                            <ul class="styled-list">
+
+
+                                <li>Implement one-click garage matching based on technical service requirements.</li>
+                                <li>Enable location-based searches to connect users with the nearest qualified service
+                                    providers in minutes.</li>
+                                <li>Integrate a transparent rating and review system to overcome existing trust barriers
+                                    in the industry.</li>
+                                <li>Provide a digital platform for garages to showcase specialized work via multi-stage
+                                    photo and video portfolios.</li>
+                            </ul>
+                        </div>
+
+                        <!-- 5. Methodology -->
+                        <div class="domain-box">
+                            <div class="box-icon">05</div>
+                            <h4 class="text-gradient">Methodology</h4>
+                            <p>Agile software development paired with iterative user testing. Initial data collection
+                                via quantitative surveys, followed by direct prototype testing with local garages.</p>
+                        </div>
+
+                        <!-- 6. Technologies Used -->
+                        <div class="domain-box"
+                            style="background: rgba(27, 38, 59, 0.03); border: 1px dashed rgba(27, 38, 59, 0.3);">
+                            <div class="box-icon"
+                                style="color: var(--primary-navy); border-color: var(--primary-navy);">06</div>
+                            <h4 class="text-gradient">Technologies Used</h4>
+                            <p>The platform leverages Streamlit and Python for a high-performance interface, integrated
+                                with the Google Places API and Social Analytics. Machine Learning models are utilized to
+                                power the core trust-verification algorithms.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Execution -->
+        <section id="wbs" class="page-section">
+            <div class="bento-card full-page-card group"
+                style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 40px; align-items: center; padding: 40px 50px;">
+                <div class="card-content">
+                    <div class="header-tag">
+                        <span class="pulse-dot"></span>
+                        <span class="card-tag">Execution</span>
+                    </div>
+                    <h2>Work Breakdown Structure</h2>
+                    <div class="timeline large-timeline">
+                        <div class="timeline-line"></div>
+                        <div class="timeline-item">
+                            <div class="node completed"></div>
+                            <div class="content">
+                                <strong>Background Study</strong>
+                                <span>Lit Review & Market Analysis</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="node active"></div>
+                            <div class="content">
+                                <strong>System Design</strong>
+                                <span>Architecture & UI/UX Design</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="node upcoming"></div>
+                            <div class="content">
+                                <strong>Implementation</strong>
+                                <span>Models & API Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-image-wrapper"
+                    style="width: 100%; height: 100%; min-height: 300px; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); position: relative; z-index: 5; background: rgba(255,255,255,0.3); display: flex; justify-content: center; align-items: center; padding: 20px;">
+                    <img src="assets/WBS.png" alt="WBS Diagram"
+                        style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px;">
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Milestones -->
+        <section id="milestones" class="page-section">
+            <div class="bento-card full-page-card group">
+                <div class="card-content">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px; flex-wrap: wrap; gap: 20px;">
+                        <div>
+                            <div class="header-tag">
+                                <span class="pulse-dot"></span>
+                                <span class="card-tag">Roadmap</span>
+                            </div>
+                            <h2 style="margin: 0;">Project Milestones</h2>
+                        </div>
+                        <img src="assets/image3.jpeg" alt="Milestones Phase"
+                            style="width: 180px; height: 120px; object-fit: cover; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    </div>
+
+                    <!-- Horizontal Tracker -->
+                    <div class="milestone-tracker">
+                        <div class="tracker-line-bg"></div>
+                        <div class="tracker-line-fill" id="trackerFill"></div>
+                        <div class="tracker-nodes">
+                            <div class="m-node" data-val="proposal" data-label="Proposal" data-date="Oct '25">1</div>
+                            <div class="m-node" data-val="progress1" data-label="Progress 1" data-date="Jan '26">2</div>
+                            <div class="m-node" data-val="progress2" data-label="Progress 2" data-date="Mar '26">3</div>
+                            <div class="m-node" data-val="final" data-label="Final & Viva" data-date="Apr '26">4</div>
+                            <div class="m-node" data-val="website" data-label="Website" data-date="Apr '26">5</div>
+                            <div class="m-node" data-val="research" data-label="Research Paper" data-date="May '26">6
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-select-wrapper large-select">
+                        <select id="milestonesDropdown" class="stealth-select">
+                            <option value="" disabled selected>Select an Assessment Phase...</option>
+                            <option value="proposal">Project Proposal (Oct 2025)</option>
+                            <option value="progress1">Progress Review 1 — 50% Completion (Jan 2026)</option>
+                            <option value="progress2">Progress Review 2 — 90% Completion (Mar 2026)</option>
+                            <option value="final">Final Presentation & Viva (Apr 2026)</option>
+
+                            <option value="website">Project Website (Apr 2026)</option>
+                            <option value="research">Research Paper (May 2026)</option>
+                        </select>
+                    </div>
+                    <div id="milestoneDetail" class="milestone-detail hidden"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Resources -->
+        <section id="resources" class="page-section">
+            <div class="bento-card full-page-card group">
+                <div class="card-content">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px; flex-wrap: wrap; gap: 20px;">
+                        <div>
+                            <div class="header-tag">
+                                <span class="pulse-dot"></span>
+                                <span class="card-tag">Resources</span>
+                            </div>
+                            <h2 style="margin: 0;">Project Resources</h2>
+                        </div>
+                        <img src="assets/image4.jpeg" alt="Resources"
+                            style="width: 180px; height: 120px; object-fit: cover; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    </div>
+                    <div class="domain-bento-grid">
+
+                        <!-- 1. Project Documentations -->
+                        <div class="domain-box">
+                            <div class="box-icon">DOC</div>
+                            <h4 class="text-gradient">Project Documentations</h4>
+                            <p style="margin-bottom: 15px;">Primary academic documents outlining the scope, objectives,
+                                and final outcomes of the Dream Drive project.</p>
+                            <div style="display: flex; flex-direction: column; gap: 10px;">
+                                <a href="assets/TAF_25-26J-534.pdf" class="tech-tag hover-float"
+                                    style="text-decoration: none; text-align: center;" target="_blank">Project
+                                    Charter</a>
+                                <a href="assets/Proposal_Ver.1 (Draft).pdf" class="tech-tag hover-float"
+                                    style="text-decoration: none; text-align: center;" target="_blank">Proposal</a>
+                                <div
+                                    style="background: rgba(27, 38, 59, 0.03); border: 1px dashed rgba(27, 38, 59, 0.3); padding: 15px; border-radius: 12px; margin: 10px 0;">
+                                    <div
+                                        style="font-size: 0.8rem; font-weight: 800; color: var(--primary-navy); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 5px;">
+                                        Checklists</div>
+                                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                                        <a href="assets/Business Model Canvas - Strategyzer - 25-26J-534.pdf"
+                                            class="tech-tag hover-float"
+                                            style="text-decoration: none; text-align: center; font-size: 0.75rem; padding: 8px;"
+                                            target="_blank">Business Model Canvas Document</a>
+                                        <a href="assets/SRS.pdf" class="tech-tag hover-float"
+                                            style="text-decoration: none; text-align: center; font-size: 0.75rem; padding: 8px;"
+                                            target="_blank">Software Requirements Specification Report</a>
+                                        <a href="assets/PMT.pdf" class="tech-tag hover-float"
+                                            style="text-decoration: none; text-align: center; font-size: 0.75rem; padding: 8px;"
+                                            target="_blank">Project Management Tool Report</a>
+                                        <a href="assets/UAT.pdf" class="tech-tag hover-float"
+                                            style="text-decoration: none; text-align: center; font-size: 0.75rem; padding: 8px;"
+                                            target="_blank">User Acceptance Testing Report</a>
+                                    </div>
+                                </div>
+                                <a href="assets/finalreport.pdf" class="tech-tag hover-float"
+                                    style="text-decoration: none; text-align: center;" target="_blank">Final
+                                    Document</a>
+                            </div>
+                        </div>
+
+                        <!-- 2. Commercialization -->
+                        <div class="domain-box">
+                            <div class="box-icon">BIZ</div>
+                            <h4 class="text-gradient">Commercialization</h4>
+                            <p style="margin-bottom: 15px;">Strategic frameworks defining market entry, revenue
+                                generation, and long-term business viability.</p>
+                            <div style="display: flex; flex-direction: column; gap: 10px;">
+                                <a href="assets/Business Model Canvas - Strategyzer - 25-26J-534.pdf"
+                                    class="tech-tag hover-float" style="text-decoration: none; text-align: center;"
+                                    target="_blank">Business Model Canvas</a>
+                                <a href="assets/Commercialization_Video.mp4" class="tech-tag hover-float"
+                                    style="text-decoration: none; text-align: center;" target="_blank">Commercialization
+                                    Video</a>
+                            </div>
+                        </div>
+
+                        <!-- 3. Presentations -->
+                        <div class="domain-box">
+                            <div class="box-icon">PPT</div>
+                            <h4 class="text-gradient">Presentations</h4>
+                            <p style="margin-bottom: 15px;">Visual slide decks showcased during various stages of the
+                                academic progress evaluations.</p>
+                            <div style="display: flex; flex-direction: column; gap: 10px;">
+                                <a href="assets/25-26J-534_Proposal Presentation.pdf" class="tech-tag hover-float"
+                                    style="text-decoration: none; text-align: center;" target="_blank">Proposal
+                                    Presentation</a>
+                                <a href="assets/25-26J-534_Progress Presentation I.pdf" class="tech-tag hover-float"
+                                    style="text-decoration: none; text-align: center;" target="_blank">Progress
+                                    Presentation 1</a>
+                                <a href="assets/25-26J-534_Progress Presentation II.pdf" class="tech-tag hover-float"
+                                    style="text-decoration: none; text-align: center;" target="_blank">Progress
+                                    Presentation 2</a>
+                                <a href="assets/25-26J-534_Final Presentation.pdf" class="tech-tag hover-float"
+                                    style="text-decoration: none; text-align: center;" target="_blank">Final
+                                    Presentation</a>
+                            </div>
+                        </div>
+
+                        <!-- 4. Videos and Demos -->
+                        <div class="domain-box">
+                            <div class="box-icon">VID</div>
+                            <h4 class="text-gradient">Videos and Demos</h4>
+                            <p style="margin-bottom: 15px;">High-fidelity screen recordings and live system
+                                demonstrations of the Dream Drive application.</p>
+                            <div style="display: flex; flex-direction: column; gap: 10px;">
+                                <a href="assets/demo_video.mp4" class="tech-tag hover-float"
+                                    style="text-decoration: none; text-align: center;" target="_blank">Project Demo
+                                    Video</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. About & Contact -->
+        <section id="team" class="page-section">
+            <div class="bento-card full-page-card group">
+                <div class="card-content">
+                    <div class="header-tag">
+                        <span class="pulse-dot"></span>
+                        <span class="card-tag">Research Team</span>
+                    </div>
+                    <h2>About Team</h2>
+
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 20px;">
+
+                        <!-- Profile 1 -->
+                        <div class="glass-id-card">
+                            <div class="avatar" style="background-image: url('assets/researcher.jpg'); background-position: top center;"></div>
+                            <h2>K.S. Dasuni</h2>
+                            <div class="role-badge">Lead Researcher & Developer</div>
+                            <p class="student-id" style="z-index: 1;"><span>IT21385582- Undergraduate</span></p>
+                            <p class="degree" style="z-index: 1; text-align: center;">Information Systems Engineering @
+                                SLIIT - Malabe</p>
+
+                            <div class="contact-grid" style="grid-template-columns: 1fr;">
+                                <div class="contact-item">+94 778 425 887</div>
+                                <div class="contact-item">it21385582@my.sliit.lk</div>
+                            </div>
+                        </div>
+
+                        <!-- Profile 2 -->
+                        <div class="glass-id-card">
+                            <div class="avatar" style="background-image: url('assets/supervisor.jpeg');"></div>
+                            <h2>Ms. Rangi Liyanage</h2>
+                            <div class="role-badge">Research Supervisor</div>
+                            <p class="student-id" style="z-index: 1;"><span>Lecturer</span></p>
+                            <p class="degree" style="z-index: 1; text-align: center;">Computer Systems Engineering
+                                Department @ SLIIT - Malabe</p>
+
+                            <div class="contact-grid" style="grid-template-columns: 1fr;">
+                                <div class="contact-item" style="opacity: 0.5;">+94 117 544 801</div>
+                                <div class="contact-item" style="opacity: 0.5;">rangi.l@sliit.lk</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="stealth-footer">
+
+        <div class="footer-content">
+
+
+            <h3 class="glitch-mini" style="font-family: var(--font-display); font-weight: 700;" data-text="DREAM DRIVE">
+                DREAM DRIVE</h3>
+            <p>Research Dashboard &copy; 2026. All Rights Reserved.</p>
+            <p class="university">Sri Lanka Institute of Information Technology (SLIIT)</p>
+            <p class="developer">Developed by K.S. Dasuni (IT21385582)</p>
+            <p class="email"><a href="mailto:it21385582@my.sliit.lk" class="footer-link">it21385582@my.sliit.lk</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
