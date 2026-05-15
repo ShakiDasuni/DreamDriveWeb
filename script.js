@@ -252,4 +252,33 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // 8. References Modal Logic
+    const referencesModal = document.getElementById('referencesModal');
+    const openModalBtns = document.querySelectorAll('.btn-references, a[href="#references"]');
+    const closeModalBtn = document.getElementById('closeModal');
+
+    if (referencesModal) {
+        openModalBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                referencesModal.classList.add('active');
+                document.body.style.overflow = 'hidden'; 
+            });
+        });
+    }
+
+    if (closeModalBtn && referencesModal) {
+        closeModalBtn.addEventListener('click', () => {
+            referencesModal.classList.remove('active');
+            document.body.style.overflow = ''; 
+        });
+
+        referencesModal.addEventListener('click', (e) => {
+            if (e.target === referencesModal) {
+                referencesModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
 });
